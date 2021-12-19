@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Jolly Cola - Historie</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Kalle Holmgaard Mersh">
+	<meta name="description" content="Prøv den forfriskende smag af Jolly Cola! Siden 1959 har Jolly Cola været et hit i Danmark. Sortimentet er stort og byder på både Jolly Cola, Jolly Cola Sukkerfri, Jolly Appelsin Sukkerfri og Jolly Time Sukkerfri.">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonte -->
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow+Condensed:wght@200&family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/*Gør sort til rød overgangen længere så boxen går i ét med baggrunden*/
+	#wrap{
+		background-image: linear-gradient(0deg, #b20606, 30%, black );
+	}
+/*skaber mellemrum mellem burgermenu og tekstboxen med padding*/
+	#showMenu{
+		padding-bottom: 40px;
+	}
+
+/*Har brugt rgba til at gøre tekstboxen gennemsigtig sort*/
+	.tekst_box{
+		background: rgba(0, 0, 0, 0.10);
+		min-height: 200vh;
+		width: 70%;
+		margin: auto;
+		text-align: left;
+	}
+
+/*Jolly flaske boxen har samme gennemsigtighed som tekst boxen. Den skal åbenbart stilles til 0 , 0, 0 , 0 for at det er det samme*/
+	.jolly_flaske_box{
+ 		margin: auto;
+		background: rgba(0, 0, 0, 0);
+	}
+
+/*Cola flasken er flyttet mod månen med padding*/
+	.jolly_flaske{
+		opacity: 100%;
+		width: 30%;
+		padding-left: 93px;
+	}
+
+	h3{
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.8em;
+		padding-bottom: 30px;
+	}
+/* Anden font til teksen + afstanden mellem linjerne*/
+	p {
+		font-family: 'Raleway', sans-serif;
+		line-height: 2;
+		padding-bottom: 35px;
+		font-size: 1em;
+	}
+
+/*Billedebeskrivelses tekst*/
+	.img_caption{
+		text-align:center;
+		padding-bottom: 20px;
+		font-size: 0.6em;
+		font-family: 'Raleway', sans-serif;
+	}
+
+/*Sig jolly reklame størrelse og placering*/
+	.sigjolly{
+		width: 70%;
+		padding-left: 40px;
+	}
+
+	/*tablet skærmstørrelse*/
+	@media only screen and (min-width: 768px) {
+
+/*Vi gør tekst boksen lidt større samt gør skrift større og afstanden mellem linjerne større*/
+	.tekst_box{
+		width: 80%;
+	}
+
+	p{
+		font-size: 2em;
+		line-height: 2;
+	}
+
+/*Redigering af gammel cola flaske*/
+	.jolly_flaske{
+		width: 20%;
+		padding-left: 320px;
+		padding-top: 30px;
+		padding-bottom: 0px;
+	}
+
+/*Større overskrift*/
+	h3{
+		font-size: 3em;
+	}
+
+	/*Sig jolly reklame størrelse og placering*/
+		.sigjolly{
+			width: 50%;
+			padding-left: 200px;
+		}
+
+	/* 3. Stor skærm */
+	@media only screen and (min-width: 1025px) {
+
+/*jolly cola siden er den eneste hvor overgangen fra sort til rød redigeres individuelt. Derfor redigeres den her*/
+	#wrap{
+	background-image: linear-gradient(270deg, #b20606, 30%, black );
+	}
+
+	.tekst_box{
+		width: 60%;
+	}
+
+	h3{
+		font-size: 2em;
+	}
+
+	p{
+		font-size: 1em;
+		text-align: left;
+	}
+
+	.jolly_flaske{
+		width: 12%;
+		padding-left: 375px;
+	}
+
+	/*Sig jolly reklame størrelse og placering*/
+		.sigjolly{
+			width: 35%;
+			padding-left: 275px;
+		}
+	}
+}
+
+</style>
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/icon_jolly.png" />
+</head>
+
+<body>
+
+	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
+	<div id="wrap">
+
+		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+		<div class="logo">
+			<a href="index.html"> <img src="images/jolly_logo_hvid.png" alt="jolly cola logo"></a>
+		</div>
+
+		<nav>
+			<!-- enkel burger-menu -->
+			<div id="showMenu">
+				<a class="burger_menu" href="mob-menu.html">☰</a>
+			</div>
+
+			<div class="some_icons">
+				<a href="https://www.facebook.com/JollyCola/"> <img class="mobile_fb" src="images/fb_icon.png" alt="facebook icon"></a>
+				<a href="https://www.instagram.com/jollycolaoriginal/?hl=en"><img class="mobile_ig" src="images/ig_icon.png" alt="instagram icon"></a>
+			</div>
+
+			<!-- Menuer laves som regel i form af uordnede lister.
+					 Listerne kan styles så de går vandret eller lodret -->
+					 <ul id="menu">
+			 			<li><a href="jolly-cola.html">Jolly Cola</a></li>
+			 			<li><a href="kampagne.html">Kampagne</a></li>
+			 			<li><a href="køb.html">Køb</a></li>
+			 			<li class="vestfyens_bryggeri"><a href="https://bryggeriet-vestfyen.dk/">Vestfyens Bryggeri</a></li>
+			 			<li><a href="kontakt.html">Kontakt</a></li>
+			 		</ul>
+
+		</nav>
+
+		<header>
+			<!-- site navn plus evt tagline og logo -->
+
+			<!-- ofte reserveres h1 til site-navn -->
+		</header>
+
+		<!-- indhold -->
+		<main>
+
+			<!-- modul for en sektion -->
+			<section id="aaa">
+				<div class="tekst_box">
+						<h3>62 år med Jolly Cola</h3>
+						<p>D. 1. juli. 1959 blev Jolly Cola introduceret til det danske colamarked af Dansk Coladrik for at konkurrere med de Amerikanske brands. Dansk Coladrik var et fælles projekt blandt 18 bryggerier og mineralvandsfabrikker i Danmark. </p>
+						<p>Det store Amerikanske brand Coca Cola havde haft lidt succes tilbage i 30’erne men nåede aldrig at slå igennem fordi 2. verdenskrig udbrød, og der kom rationering af sukker samt en afgift på cola i Danmark. Det gjorde cola lige så dyr som øl, og gjorde at Coca Cola havde svært ved at trænge ind på det danske marked. Afgiften kom af lobbyisme fra danske bryggerier, og mineralvandsproducenter og virkede som planlagt. Men i 1959 blev denne afgift fjernet og kampen om colamarkedet i Danmark begyndte. </p>
+						<div class="jolly_flaske_box">
+							<img class="jolly_flaske" src="images/jolly_flaske.png"  alt="Gammel jolly cola flaske">
+							<p class="img_caption">Billede taget fra sjobeck.dk </p>
+						</div>
+						<p>Dansk Coladrik kopierede hele deres organisation efter Coca Colas og havde målet om, at deres cola ville være danskernes fortrukne. </p>
+						<p>Dansk Coladriks plan virkede, og i juli 1959 alene solgte de 9 millioner flasker cola, sammenlignet med Coca Cola der solgte 5 millioner flasker. Da markedet stabiliserede sig, var ca. hver fjerde sodavand solgt i Danmark var en cola, og omkring 40% af de colaer der blev solgt, var en Jolly Cola. </p>
+						<p>Der er flere forklaringer til Jolly Colas succes. Den største faktor, var dog Dansk Coladriks netværk, kendskab til det danske marked og distributionssystem. En anden faktor var at Coca Cola også først i 1960’erne kunne findes i hele Danmark. Før det var det kun i storbyerne, man kunne finde det Amerikanske brand. </p>
+						<p> Jolly Cola blev også markedsført som ”den store cola”. Flasken indeholdt nemlig 25 cl., hvorimod Coca Colas flasker indeholdt 19 cl. Dette var også vigtigt for danskerne, da cola blev anset for at være et luksuriøst produkt. Senere i 60’erne havde Jolly Cola 60% af det danske colamarked. </p>
+
+					<p>Carlsberg havde aktiemajoriteten i Dansk Coladrik indtil 1997, hvor de solgte den til Albani. 6 år senere i 2003 får Vestfyen Bryggeri over halvdelen af aktierne og relancerer den danske cola. Jolly Cola udgør 25% af colaerne solgt i Coop Danmark i januar 2004, og får i 2005 Jolly Time, Jolly Orange og Jolly Energi, som nye varianter på markedet. I 2011 introducerer Vestfyens Bryggeri Jolly Kildevand, Jolly Danskvand og Jolly Danskvand Citrus til det danske marked.</p>
+					<div class="sigjolly_box">
+						<img class="sigjolly" src="images/sigjolly.png"  alt="Gammel Jolly cola reklame">
+						<p class="img_caption">Billede taget fra classic.samvirke.dk </p>
+					</div>
+					<p>”Sig Jolly til din cola” er sloganet Jolly Cola var kendt på tilbage i 1959. Det blev på 50-års jubilæet i 2009 ændret til ”Free your taste” og siden hen har der stået ”En Ægte Dansk Original” på colaen. Vestfyens Bryggeri relancerede colaen endnu engang i 2014 med Jolly Colas stil fra 80’erne. Her benyttede man sig af den samme etikette, samt det gamle slogan ”Sig Jolly til din cola”. </p>
+				</div>
+
+				<article>
+					<figure>
+
+					</figure>
+
+
+				</article>
+			</section>
+
+			<!-- modul: en ny sektion -->
+
+
+
+		</main>
+
+		<!-- typisk kontaktinformationer -->
+
+	</div><!-- /wrap -->
+
+	<footer>
+
+		<figure>
+			<p class="footer_information"> A/S Bryggeriet Vestfyen <br> Fåborgvej 4 <br> DK-5610 Assens <br> Tlf: +45 6471 1041 <br> info@vestfyen.dk <br> </p>
+			<ul class="footer_information_tablet">
+				<li class="footer_tablet">A/S Bryggeriet Vestfyen</li>
+				<li class="footer_tablet">Fåborgvej 4</li>
+				<li class="footer_tablet">DK-5610 Assens</li>
+				<li class="footer_tablet">Tlf: +45 6471 1041</li>
+				<li class="footer_tablet">info@vestfyen.dk</li>
+			</ul>
+		</figure>
+
+	</footer>
+
+</body>
+</html>

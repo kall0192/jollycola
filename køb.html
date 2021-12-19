@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Jolly Cola - Køb</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Kalle Holmgaard Mersh">
+	<meta name="description" content="Prøv den forfriskende smag af Jolly Cola! Siden 1959 har Jolly Cola været et hit i Danmark. Sortimentet er stort og byder på både Jolly Cola, Jolly Cola Sukkerfri, Jolly Appelsin Sukkerfri og Jolly Time Sukkerfri.">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonte -->
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow+Condensed:wght@200&family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+  /* min-heighten styrer højden på skærmen*/
+
+  #wrap{
+    min-height: 120vh;
+  }
+
+  h1{
+		padding-top: 20px;
+		font-size: 1.7em;
+		font-family: 'Raleway', sans-serif;
+  }
+
+  .jolly_sortiment{
+    padding-top: 40px;
+  }
+
+/* Redigering af sortiment beskrivelse boksen + teksten i de bokse*/
+
+  .sortiment_box{
+    padding-top: 20px;
+    padding-bottom: 0px;
+		padding-left: 15px;
+		padding-right: 15px;
+  }
+
+  .sortiment_beskrivelse{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+		line-height: 1.5;
+  }
+
+  .sortiment_box1{
+    padding-top: 5px;
+    padding-bottom: 10px;
+		line-height: 1.2;
+		padding-left: 15px;
+		padding-right: 15px;
+  }
+
+  .sortiment_beskrivelse1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+		line-height: 1.5;
+
+  }
+
+/*Beskrivelse af hvorfra billederne kommer*/
+	.img_caption{
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.5em;
+	}
+/* Jeg har skildt dem ad i classes så jeg kunne få mellemrum mellem dem*/
+  .jolly_colaer{
+    width: 40%;
+    padding-right: 10px;
+  }
+
+  .jolly_colaer1{
+    width: 40%;
+    padding-left: 10px;
+  }
+
+/* Jolly_colaer2 og 3 gør det samme. Her er der bare sat padding på toppen for at få større mellemrum mellem teksten over*/
+    .jolly_colaer2{
+      width: 40%;
+      padding-right: 10px;
+      padding-top: 30px;
+    }
+
+    .jolly_colaer3{
+      width: 40%;
+      padding-left: 10px;
+      padding-top: 30px;
+    }
+
+/* Redigering af figuerne hvori der er tekst til sortimentet*/
+
+  .koeb1{
+    width: 49%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .koeb2{
+    width: 49%;
+    display: inline-block;
+  }
+
+  .koeb3{
+    width: 49%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .koeb4{
+    width: 49%;
+    display: inline-block;
+  }
+
+
+/* Aight. Her har du lavet positionen absolute, så du kunne bruge transform til at rykke manuelt rundt på p teksten*/
+
+  .Jolly_cola_tekst{
+  text-align: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  position: absolute;
+  transform: translate(50%, -10%)
+  }
+
+  .Jolly_cola_sukkerfri_tekst{
+  text-align: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  position: absolute;
+  transform: translate(35%, -10%)
+  }
+
+  .Jolly_appelsin_tekst{
+    text-align: center;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    position: absolute;
+    transform: translate(25%, -10%)
+  }
+
+  .Jolly_time_tekst{
+    text-align: center;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    position: absolute;
+    transform: translate(40%, -10%)
+  }
+
+	 .footer_information{
+	 	padding-top: 90px;
+	 }
+
+	/*tablet skærmstørrelse*/
+	@media only screen and (min-width: 768px) {
+
+
+
+/*Ændrer størrelsen på beskrivelses boksene samt font størrelse og centrerer dem. Der er også addet lidt padding over og under beskrivelsen*/
+	h1{
+		font-size: 3em;
+		padding-top: 0px;
+	}
+
+	.sortiment_beskrivelse{
+		font-size: 2em;
+		line-height: 1.5;
+		width: 80%;
+		margin: auto;
+		padding-top: 40px;
+	}
+
+	.sortiment_beskrivelse1{
+		font-size: 2em;
+		line-height: 1.5;
+		width: 80%;
+		margin: auto;
+		padding-top: 20px;
+
+	}
+
+	/*Beskrivelse af hvorfra billederne kommer*/
+		.img_caption{
+			font-family: 'Raleway', sans-serif;
+			font-size: 0.8em;
+			padding-bottom: 40px;
+		}
+
+/* Redigering af billederne. Deres størrelser og hvor de er placeret med padding*/
+	.jolly_colaer{
+    width: 35%;
+    padding-right: 50px;
+  }
+
+  .jolly_colaer1{
+    width: 35%;
+    padding-left: 50px;
+  }
+
+/* Jolly_colaer2 og 3 gør det samme. Her er der bare sat padding på toppen for at få større mellemrum mellem teksten over*/
+    .jolly_colaer2{
+      width: 35%;
+      padding-right: 50px;
+      padding-top: 80px;
+    }
+
+    .jolly_colaer3{
+      width: 35%;
+      padding-left: 50px;
+      padding-top: 80px;
+    }
+
+/* Ændrer font størrelsen og placerer teksten korrekt*/
+		.Jolly_cola_tekst{
+		font-size: 2em;
+	  transform: translate(125%, -10%)
+	  }
+
+	  .Jolly_cola_sukkerfri_tekst{
+		font-size: 2em;
+	  transform: translate(100%, -10%)
+	  }
+
+	  .Jolly_appelsin_tekst{
+			font-size: 2em;
+	    transform: translate(80%, -10%)
+	  }
+
+	  .Jolly_time_tekst{
+			font-size: 2em;
+	    transform: translate(110%, -10%)
+	  }
+
+/*Jeg satte padding herpå for at få mellemrum mellem footeren og billede beskrivelserne*/
+	article{
+		padding-bottom: 100px;
+	}
+
+	.footer_information{
+	 padding-top: 0px;
+	}
+
+	/* 3. Stor skærm */
+	@media only screen and (min-width: 1025px){
+
+
+/*Mindre mellemrum mellem footeren og bodyen*/
+		article{
+			padding-bottom: 80px;
+		}
+
+/*Redigering af teksten over billederne*/
+		h1{
+			font-size: 2em;
+		}
+
+		.sortiment_box, .sortiment_box1{
+			width: 60%;
+			margin: auto;
+		}
+
+		.sortiment_beskrivelse, .sortiment_beskrivelse1{
+			font-size: 1em;
+			padding-top: 20px;
+		}
+
+		/*Beskrivelse af hvorfra billederne kommer*/
+			.img_caption{
+				font-family: 'Raleway', sans-serif;
+				font-size: 0.6em;
+				padding-bottom: 40px;
+			}
+
+
+		.jolly_colaer{
+			width: 16%;
+		}
+
+		.jolly_colaer1{
+			width: 16%;
+		}
+
+		.jolly_colaer2{
+			width: 16%;
+		}
+
+		.jolly_colaer3{
+			width: 16%;
+		}
+
+		/* Ændrer font størrelsen og placerer teksten korrekt*/
+				.Jolly_cola_tekst{
+				font-size: 1.3em;
+			  transform: translate(480%, -10%)
+			  }
+
+			  .Jolly_cola_sukkerfri_tekst{
+				font-size: 1.3em;
+			  transform: translate(115%, -10%)
+			  }
+
+			  .Jolly_appelsin_tekst{
+					font-size: 1.3em;
+			    transform: translate(350%, -10%)
+			  }
+
+			  .Jolly_time_tekst{
+					font-size: 1.3em;
+			    transform: translate(130%, -10%)
+			  }
+
+/*Gør at der kommer en hover på teksten under billederne*/
+				.koeb1:hover, .koeb2:hover, .koeb3:hover, .koeb4:hover {
+					color: grey;
+					background-color: white;
+					cursor: pointer;
+				}
+	}
+
+	}
+
+</style>
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/icon_jolly.png" />
+</head>
+
+<body>
+
+	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
+	<div id="wrap">
+
+		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+		<div class="logo">
+			<a href="index.html"> <img src="images/jolly_logo_hvid.png" alt="jolly cola logo"></a>
+		</div>
+
+		<nav>
+			<!-- enkel burger-menu -->
+			<div id="showMenu">
+				<a class="burger_menu" href="mob-menu.html">☰</a>
+			</div>
+
+			<div class="some_icons">
+				<a href="https://www.facebook.com/JollyCola/"> <img class="mobile_fb" src="images/fb_icon.png" alt="facebook icon"></a>
+				<a href="https://www.instagram.com/jollycolaoriginal/?hl=en"><img class="mobile_ig" src="images/ig_icon.png" alt="instagram icon"></a>
+			</div>
+			<!-- Menuer laves som regel i form af uordnede lister.
+					 Listerne kan styles så de går vandret eller lodret -->
+			<ul id="menu">
+					<li><a href="jolly-cola.html">Jolly Cola</a></li>
+					<li><a href="kampagne.html">Kampagne</a></li>
+					<li><a href="køb.html">Køb</a></li>
+					<li class="vestfyens_bryggeri"><a href="https://bryggeriet-vestfyen.dk/">Vestfyens Bryggeri</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+
+		</nav>
+
+		<header>
+			<!-- site navn plus evt tagline og logo -->
+      <h1> Vores Sortiment</h1>
+			<!-- ofte reserveres h1 til site-navn -->
+		</header>
+
+		<!-- indhold -->
+		<main>
+
+      <figure class="sortiment_box">
+        <p class="sortiment_beskrivelse"> Den orginale danske cola. Siden 1959 har danskerne nydt den forfriskende smag af Jolly Cola - og det sørger vi for, danskerne kan blive ved med. </p>
+      </figure>
+
+      <figure class="sortiment_box1">
+        <p class="sortiment_beskrivelse1"> Fås i 50 cl. og 150 cl. flasker. Derudover kan de nydes i 33 cl. dåser. </p>
+				<p class="img_caption">Billederne er taget fra bryggeriet-vestfyen.dk</p>
+      </figure>
+			<!-- modul for en sektion -->
+			<section id="aaa">
+				<article>
+					<figure class="jolly_sortiment">
+            <img class="jolly_colaer" src="images/jolly_colaer.png" alt="Jolly cola">
+            <img class="jolly_colaer1" src="images/jolly_cola_sukkerfri.png" alt="Jolly Cola Sukkerfri">
+					</figure>
+
+
+          <figure class="koeb1">
+            <p class="Jolly_cola_tekst" >Jolly Cola</p>
+          </figure>
+
+          <figure class="koeb2">
+            <p class="Jolly_cola_sukkerfri_tekst">Jolly Cola <br> Sukkerfri</p>
+          </figure>
+
+          <figure class="jolly_sortiment">
+            <img class="jolly_colaer2" src="images/jolly_appelsin.png" alt="Jolly cola">
+            <img class="jolly_colaer3" src="images/jolly_druesukker.png" alt="Jolly Cola Sukkerfri">
+					</figure>
+
+          <figure class="koeb3">
+            <p class="Jolly_appelsin_tekst" >Jolly Appelsin <br> Sukkerfri</p>
+          </figure>
+
+          <figure class="koeb4">
+            <p class="Jolly_time_tekst">Jolly Time <br> Sukkerfri</p>
+          </figure>
+
+				</article>
+			</section>
+
+			<!-- modul: en ny sektion -->
+
+
+
+		</main>
+
+		<!-- typisk kontaktinformationer -->
+
+
+	</div><!-- /wrap -->
+
+  <footer>
+
+    <figure>
+      <p class="footer_information"> A/S Bryggeriet Vestfyen <br> Fåborgvej 4 <br> DK-5610 Assens <br> Tlf: +45 6471 1041 <br> info@vestfyen.dk <br> </p>
+			<ul class="footer_information_tablet">
+				<li class="footer_tablet">A/S Bryggeriet Vestfyen</li>
+				<li class="footer_tablet">Fåborgvej 4</li>
+				<li class="footer_tablet">DK-5610 Assens</li>
+				<li class="footer_tablet">Tlf: +45 6471 1041</li>
+				<li class="footer_tablet">info@vestfyen.dk</li>
+			</ul>
+		</figure>
+
+  </footer>
+
+</body>
+</html>

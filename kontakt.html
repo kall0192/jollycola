@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Jolly Cola</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Kalle Holmgaard Mersh">
+	<meta name="description" content="Prøv den forfriskende smag af Jolly Cola! Siden 1959 har Jolly Cola været et hit i Danmark. Sortimentet er stort og byder på både Jolly Cola, Jolly Cola Sukkerfri, Jolly Appelsin Sukkerfri og Jolly Time Sukkerfri.">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonte -->
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow+Condensed:wght@200&family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style media="screen">
+
+/*Gør sort til rød overgangen kortere så boxen går i ét med baggrunden*/
+		#wrap{
+			min-height: 100vh;
+			background-image: linear-gradient(0deg, #b20606, 10%, black );
+		}
+
+/*styling af selve kontakt information boksen. Har gjort den boksen gennemsigtig*/
+		.kontakt_box{
+			width: 80%;
+			height: auto;
+			margin: auto;
+			margin-top: 30px;
+			background: rgba(0, 0, 0, 0.60);
+			background-color: transparent;
+		}
+
+/*Redigering af både overskrift og selve teksten i kontakt informations boksen*/
+		.kontakt_overskrift{
+			font-size: 2.1em;
+			font-family: 'Raleway', sans-serif;
+		}
+
+		.kontakt_info{
+			font-family: 'Raleway', sans-serif;
+			font-size: 1.4em;
+			line-height: 2;
+		}
+
+		/*Fjerner footer informationen*/
+			footer{
+				display:none;
+			}
+
+		/*tablet skærmstørrelse*/
+		@media only screen and (min-width: 768px) {
+
+
+			.kontakt_box{
+				padding-top: 20px;
+				padding-bottom: 50px;
+			}
+/*Redigerer størrelsen på fonten på overskriften og teksten i tekstboksen*/
+			.kontakt_overskrift{
+				font-size: 3em;
+			}
+
+			.kontakt_info{
+				font-family: 'Raleway', sans-serif;
+				font-size: 2.2em;
+				line-height: 2;
+				}
+
+/*Fjerner footer informationen*/
+			.footer_tablet{
+				display:none;
+			}
+
+/* 3. Stor skærm */
+			@media only screen and (min-width: 1025px){
+
+/*Gør sort til rød overgangen kortere så boxen går i ét med baggrunden*/
+				#wrap{
+					min-height: 100vh;
+					background-image: linear-gradient(270deg, #b20606, 20%, black );
+				}
+
+/*Redigerer tekstboksen og skriftstørrelserne*/
+				.kontakt_box{
+					width: 60%;
+					padding-top: 10px;
+				}
+
+				.kontakt_overskrift{
+					font-size: 2em;
+				}
+
+				.kontakt_info{
+					font-size: 1em;
+				}
+
+		}
+
+	}
+
+	</style>
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/icon_jolly.png" />
+</head>
+
+<body>
+
+	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
+	<div id="wrap">
+
+		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+		<div class="logo">
+			<a href="index.html"> <img src="images/jolly_logo_hvid.png" alt="jolly cola logo"></a>
+		</div>
+
+		<nav>
+			<!-- enkel burger-menu -->
+			<div id="showMenu">
+				<a class="burger_menu" href="mob-menu.html">☰</a>
+			</div>
+
+			<div class="some_icons">
+				<a href="https://www.facebook.com/JollyCola/"> <img class="mobile_fb" src="images/fb_icon.png" alt="facebook icon"></a>
+				<a href="https://www.instagram.com/jollycolaoriginal/?hl=en"><img class="mobile_ig" src="images/ig_icon.png" alt="instagram icon"></a>
+			</div>
+			<!-- Menuer laves som regel i form af uordnede lister.
+					 Listerne kan styles så de går vandret eller lodret -->
+			<ul id="menu">
+					<li><a href="jolly-cola.html">Jolly Cola</a></li>
+					<li><a href="kampagne.html">Kampagne</a></li>
+					<li><a href="køb.html">Køb</a></li>
+					<li class="vestfyens_bryggeri"><a href="https://bryggeriet-vestfyen.dk/">Vestfyens Bryggeri</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+
+		</nav>
+
+		<header>
+			<!-- site navn plus evt tagline og logo -->
+
+			<!-- ofte reserveres h1 til site-navn -->
+		</header>
+
+		<!-- indhold -->
+		<main>
+			<!-- modul for en sektion -->
+			<section id="aaa">
+				<article>
+					<figure>
+						<div class="kontakt_box">
+							<h3 class="kontakt_overskrift">Kontakt information</h3>
+							<p class="kontakt_info">A/S Bryggeriet Vestfyen <br> Fåborgvej 4 <br> DK-5610 Assens <br> Tlf: +45 6471 1041 <br> info@vestfyen.dk</p>
+						</div>
+					</figure>
+
+
+				</article>
+			</section>
+
+			<!-- modul: en ny sektion -->
+
+
+
+		</main>
+
+		<!-- typisk kontaktinformationer -->
+
+	</div><!-- /wrap -->
+
+<footer>
+	<figure>
+		<p class="footer_information"> A/S Bryggeriet Vestfyen <br> Fåborgvej 4 <br> DK-5610 Assens <br> Tlf: +45 6471 1041 <br> info@vestfyen.dk <br> </p>
+		<ul class="footer_information_tablet">
+			<li class="footer_tablet">A/S Bryggeriet Vestfyen</li>
+			<li class="footer_tablet">Fåborgvej 4</li>
+			<li class="footer_tablet">DK-5610 Assens</li>
+			<li class="footer_tablet">Tlf: +45 6471 1041</li>
+			<li class="footer_tablet">info@vestfyen.dk</li>
+		</ul>
+	</figure>
+</footer>
+
+</body>
+</html>

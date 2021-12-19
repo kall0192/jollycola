@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Jolly Cola</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Kalle Holmgaard Mersh">
+	<meta name="description" content="Prøv den forfriskende smag af Jolly Cola! Siden 1959 har Jolly Cola været et hit i Danmark. Sortimentet er stort og byder på både Jolly Cola, Jolly Cola Sukkerfri, Jolly Appelsin Sukkerfri og Jolly Time Sukkerfri.">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonte -->
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow+Condensed:wght@200&family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style media="screen">
+
+/*Fjerner desktop figurene*/
+		#bbb{
+			display: none;
+		}
+
+/*Redigering af figuren videoen er i samt selve videoen*/
+		.video_figure{
+			width:auto;
+			margin: auto;
+		}
+
+		.jolly_video{
+			width: 350px;
+		}
+
+		.jolly_img{
+			padding-top: 40px;
+			padding-bottom: 0px;
+			width: 40%;
+		}
+
+/*Billedebeskrivelse*/
+		.img_caption{
+			text-align: center;
+			font-size: 0.5em;
+			margin: auto;
+			font-family: 'Raleway', sans-serif;
+		}
+
+/*Padding på figuren så der er mellemrum ned til footeren*/
+		.mobile_tablet{
+			padding-bottom: 30px;
+		}
+
+/*Tekst størrelse på overskrft*/
+		.mobile_text_overskrift{
+			font-size: 2em;
+		}
+
+
+	/*tablet skærmstørrelse*/
+	@media only screen and (min-width: 768px) {
+
+		/*Redigering af forside tekst, både overskrift, normal tekst og pil*/
+		  .mobile_text_overskrift{
+		    font-size: 2.8em;
+		    padding-bottom: 20px;
+		  }
+
+		  .arrow_right{
+		    width: 5%;
+		  }
+
+		  .mobile_text{
+		    font-size: 2em;
+		  }
+
+/*størrelsen af jolly colaen*/
+			.jolly_img{
+				width: 35%;
+				padding-bottom: 0px;
+			}
+
+			/*Redigering af figuren videoen er i samt selve videoen*/
+					.video_figure{
+						width:auto;
+						margin: auto;
+						padding-bottom: 50px;
+					}
+
+					.jolly_video{
+						width: 800px;
+					}
+
+/*Billedebeskrivelse*/
+					.img_caption{
+						text-align: center;
+						font-size: 0.9em;
+						margin: auto;
+					}
+
+					/*Padding på figuren så der IKKE er mellemrum ned til footeren*/
+							.mobile_tablet{
+								padding-bottom: 0px;
+							}
+
+}
+
+
+/* 3. Stor skærm */
+@media only screen and (min-width: 1025px){
+
+/*Gør wrappen præcist fylder en hel side*/
+			#wrap{
+				min-height: 100vh;
+			}
+
+/*størrelsen af jolly colaen*/
+			.jolly_img{
+				width: 35%;
+				padding-right: 65px;
+				padding-bottom: 0px;
+			}
+
+/*Fjerner headeren da vi vil have teksten derfra til at stå i en figure ved siden af jolly colaen*/
+			header{
+				display: none;
+			}
+
+/*Gør at figuren med jolly colaen i mobil og tablet formatet forsvinder og bbb gør at desktop figuren kommer frem*/
+			#aaa{
+				display: none;
+			}
+
+			#bbb{
+				display: inline;
+			}
+
+/*Jolly cola billedet er heri. Der laves to figurer, så der kan komme tekst til venstre for*/
+			.jolly_figure_desktop{
+				width: 49%;
+				float: right;
+				margin-top: 100px;
+			}
+
+			.desktop_tekst{
+				width: 49%;
+				float: left;
+				margin-top: 50px;
+			}
+
+			.mobile_text_overskrift{
+				margin-top: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				font-size: 1.8em;
+			}
+
+			.mobile_text{
+				font-size: 1.2em;
+			}
+
+
+			/*Redigering af figuren videoen er i samt selve videoen*/
+					.video_figure{
+						width:auto;
+						margin: auto;
+						padding-bottom: 50px;
+					}
+
+					.jolly_video{
+						width: 450px;
+					}
+
+/*Billedebeskrivelse*/
+					.img_caption{
+						text-align: center;
+						font-size: 0.6em;
+						margin-right: 60px;
+					}
+
+
+}
+
+	</style>
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/icon_jolly.png" />
+</head>
+
+<body>
+
+	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
+	<div id="wrap">
+
+		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+		<div class="logo">
+			<a href="index.html"> <img src="images/jolly_logo_hvid.png" alt="jolly cola logo"></a>
+		</div>
+
+		<nav>
+			<!-- enkel burger-menu -->
+			<div id="showMenu">
+				<a class="burger_menu" href="mob-menu.html">☰</a>
+			</div>
+
+			<div class="some_icons">
+				<a href="https://www.facebook.com/JollyCola/"> <img class="mobile_fb" src="images/fb_icon.png" alt="facebook icon"></a>
+				<a href="https://www.instagram.com/jollycolaoriginal/?hl=en"><img class="mobile_ig" src="images/ig_icon.png" alt="instagram icon"></a>
+			</div>
+
+			<!-- Menuer laves som regel i form af uordnede lister.
+					 Listerne kan styles så de går vandret eller lodret -->
+			<ul id="menu">
+				<li><a href="jolly-cola.html">Jolly Cola</a></li>
+				<li><a href="kampagne.html">Kampagne</a></li>
+				<li><a href="køb.html">Køb</a></li>
+				<li class="vestfyens_bryggeri"><a href="https://bryggeriet-vestfyen.dk/">Vestfyens Bryggeri</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+
+		</nav>
+
+		<header>
+			<!-- site navn plus evt tagline og logo -->
+
+
+
+			<!-- ofte reserveres h1 til site-navn -->
+		<a class="a_link" href="kampagne.html">
+				<h1 class="mobile_text_overskrift"> Fejr julen med Jolly Cola  </h1>
+				<h3 class="mobile_text"> Læs mere her <img class="arrow_right" src="images/white_arrow.png" alt="pil"> </h3>
+		</a>
+
+		<figure class="video_figure">
+			<video class="jolly_video" loop="loop" autoplay="autoplay" controls muted >
+				<source src="videos/jolly_video.mp4" type="video/mp4">
+				Your browser does not support HTML video.
+			</video>
+		</figure>
+
+		</header>
+
+		<!-- indhold -->
+		<main>
+			<!-- modul for en sektion -->
+
+			<section id="aaa">
+				<article>
+
+
+					<figure class="mobile_tablet">
+						<img class="jolly_img" src="images/jolly_daese.png" alt="Jolly cola dåse">
+						<p class="img_caption"> Billede taget fra bevco.dk</p>
+					</figure>
+
+				</article>
+
+
+
+
+			</section>
+
+			<section id="bbb">
+				<article>
+
+					<figure class="jolly_figure_desktop">
+
+						<img class="jolly_img" src="images/jolly_daese.png" alt="Jolly cola dåse">
+						<p class="img_caption">Billede taget fra bevco.dk</p>
+					</figure>
+
+					<figure class="desktop_tekst">
+						<a class="a_link" href="kampagne.html">
+								<h1 class="mobile_text_overskrift"> Fejr julen med Jolly Cola  </h1>
+								<h3 class="mobile_text"> Læs mere her <img class="arrow_right" src="images/white_arrow.png" alt="pil"> </h3>
+						</a>
+					</figure>
+
+					<figure class="video_figure">
+						<video class="jolly_video" loop="loop" autoplay="autoplay" controls muted >
+							<source src="videos/jolly_video.mp4" type="video/mp4">
+							Your browser does not support HTML video.
+						</video>
+					</figure>
+
+
+				</article>
+			</section>
+
+			<!-- modul: en ny sektion -->
+
+
+
+		</main>
+
+		<!-- typisk kontaktinformationer -->
+
+	</div><!-- /wrap -->
+
+<footer>
+	<figure>
+		<p class="footer_information"> A/S Bryggeriet Vestfyen <br> Fåborgvej 4 <br> DK-5610 Assens <br> Tlf: +45 6471 1041 <br> info@vestfyen.dk <br> </p>
+		<ul class="footer_information_tablet">
+			<li class="footer_tablet">A/S Bryggeriet Vestfyen</li>
+			<li class="footer_tablet">Fåborgvej 4</li>
+			<li class="footer_tablet">DK-5610 Assens</li>
+			<li class="footer_tablet">Tlf: +45 6471 1041</li>
+			<li class="footer_tablet">info@vestfyen.dk</li>
+		</ul>
+
+	</figure>
+</footer>
+
+</body>
+</html>

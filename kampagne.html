@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Jolly Cola</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Kalle Holmgaard Mersh">
+	<meta name="description" content="Prøv den forfriskende smag af Jolly Cola! Siden 1959 har Jolly Cola været et hit i Danmark. Sortimentet er stort og byder på både Jolly Cola, Jolly Cola Sukkerfri, Jolly Appelsin Sukkerfri og Jolly Time Sukkerfri.">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonte -->
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow+Condensed:wght@200&family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style media="screen">
+
+/*Du har ændret wrap navnet til nedestående. Derudover har du sat sne gif ind her så det står i baggrunden, samt sat baggrundsfarven
+til rød fordi overgangen fra sort til rød ikke virkede med gifen*/
+		#wrap_kampagne {
+			min-height: 80vh;
+			background-color: rgba(200, 0, 0, 0.7);
+			background-image: linear-gradient(0deg, #b20606, 50%, black );
+			background-image: url("images/sne.gif");
+
+		}
+
+
+/*styling af selve kampagne information boksen*/
+		.kampagne_box{
+			width: 80%;
+			height: auto;
+			margin: auto;
+			margin-top: 30px;
+			background: rgba(0, 0, 0, 0.15);
+		}
+
+/*Redigering af både overskrift og selve teksten i kampagne informations boksen*/
+		.kampagne_overskrift{
+			font-size: 1.5em;
+			font-family: 'Raleway', sans-serif;
+			padding-bottom: 20px;
+		}
+
+		.kampagne_tekst{
+			font-family: 'Raleway', sans-serif;
+			font-size: 1em;
+			line-height: 1.4;
+		}
+
+		.kampagne_tekst_lille{
+			font-family: 'Raleway', sans-serif;
+			font-size: 0.6em;
+		}
+
+/*Ændret til 85% så der ikke er for stor forskel på de røde farver*/
+		.footer_information{
+			background-image: linear-gradient(0deg, black, 85%, #b20606 );
+		}
+
+		/*tablet skærmstørrelse*/
+		@media only screen and (min-width: 768px) {
+
+/*Gør skærmen lidt længere*/
+		#wrap_kampagne{
+			min-height: 85vh;
+		}
+
+			/*Redigering af både overskrift og selve teksten i kampagne informations boksen*/
+			.kampagne_overskrift{
+				font-size: 3em;
+				padding-bottom: 40px;
+			}
+
+			.kampagne_tekst{
+				font-size: 2em;
+				line-height: 1.5;
+			}
+
+			.kampagne_tekst_lille{
+				font-size: 1.2em;
+				padding-top: 20px;
+			}
+		}
+
+		/* 3. Stor skærm */
+		@media only screen and (min-width: 1025px){
+
+/*Ændrer lidt farven på footeren, som skal være anderledes ift. på de andre sider*/
+			.footer_information_tablet{
+				background-image: linear-gradient(180deg, #b20606, 40%, black );
+			}
+
+/*Redigering af box størrelsen samt teksten indeni*/
+			.kampagne_box{
+				width: 60%;
+			}
+
+			.kampagne_overskrift{
+				font-size: 2em;
+			}
+
+			.kampagne_tekst{
+				font-size: 1em;
+				text-align: center;
+			}
+
+			.kampagne_tekst_lille{
+				font-size: 0.6em;
+				text-align: center;
+			}
+
+		}
+
+	</style>
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/icon_jolly.png" />
+</head>
+
+<body>
+
+	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
+	<div id="wrap_kampagne">
+
+
+
+		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+		<div class="logo">
+			<a href="index.html"> <img src="images/jolly_logo_hvid.png" alt="jolly cola logo"></a>
+		</div>
+
+		<nav>
+			<!-- enkel burger-menu -->
+			<div id="showMenu">
+				<a class="burger_menu" href="mob-menu.html">☰</a>
+			</div>
+
+			<div class="some_icons">
+				<a href="https://www.facebook.com/JollyCola/"> <img class="mobile_fb" src="images/fb_icon.png" alt="facebook icon"></a>
+				<a href="https://www.instagram.com/jollycolaoriginal/?hl=en"><img class="mobile_ig" src="images/ig_icon.png" alt="instagram icon"></a>
+			</div>
+			<!-- Menuer laves som regel i form af uordnede lister.
+					 Listerne kan styles så de går vandret eller lodret -->
+			<ul id="menu">
+					<li><a href="jolly-cola.html">Jolly Cola</a></li>
+					<li><a href="kampagne.html">Kampagne</a></li>
+					<li><a href="køb.html">Køb</a></li>
+					<li class="vestfyens_bryggeri"><a href="https://bryggeriet-vestfyen.dk/">Vestfyens Bryggeri</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+
+
+		</nav>
+
+		<header>
+			<!-- site navn plus evt tagline og logo -->
+
+			<!-- ofte reserveres h1 til site-navn -->
+		</header>
+
+		<!-- indhold -->
+		<main>
+			<!-- modul for en sektion -->
+			<section id="aaa">
+				<article>
+					<figure>
+						<div class="kampagne_box">
+							<h3 class="kampagne_overskrift">Fejr julen med Jolly Cola!</h3>
+							<p class="kampagne_tekst"> Jolly Cola holder jul, og giver dig de bedste juletilbud* <br> <br> Vi har fyldt butikkerne op med Jolly klassikerne, som hele Danmark elsker<br>- så i også kan fejre julen med Jolly Cola <br> <br> Du kan spare op til 25% på Jolly Cola kasser der består af 24 dåser á 33 cl. <br> <br> Derudover kan du spare 50% på vores 150 cl. flasker - det bliver ikke meget billigere!  </p>
+							<p class="kampagne_tekst_lille"> *Tilbuddet gælder kun i december</p>
+						</div>
+					</figure>
+
+
+				</article>
+			</section>
+
+			<!-- modul: en ny sektion -->
+
+
+
+		</main>
+
+		<!-- typisk kontaktinformationer -->
+
+	</div><!-- /wrap -->
+
+<footer>
+	<figure>
+		<p class="footer_information"> A/S Bryggeriet Vestfyen <br> Fåborgvej 4 <br> DK-5610 Assens <br> Tlf: +45 6471 1041 <br> info@vestfyen.dk <br> </p>
+		<ul class="footer_information_tablet">
+			<li class="footer_tablet">A/S Bryggeriet Vestfyen</li>
+			<li class="footer_tablet">Fåborgvej 4</li>
+			<li class="footer_tablet">DK-5610 Assens</li>
+			<li class="footer_tablet">Tlf: +45 6471 1041</li>
+			<li class="footer_tablet">info@vestfyen.dk</li>
+		</ul>
+	</figure>
+</footer>
+
+</body>
+</html>
